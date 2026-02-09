@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-ocean-950 text-ocean-200 mt-auto">
       <div className="mx-auto max-w-6xl px-4 py-10 grid gap-8 sm:grid-cols-3">
         <div>
-          <h3 className="font-bold text-white text-lg mb-2">Shrimp Depot</h3>
+          <h3 className="font-bold text-white text-lg mb-2">Shrimp Yard</h3>
           <p className="text-sm text-ocean-300">
-            Hobbyist-bred Bloody Mary shrimp. Healthy lines, vibrant color.
+            Hobbyist-bred Crystal Red shrimp. Healthy lines, vibrant color.
           </p>
         </div>
         <div>
@@ -21,12 +21,12 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="font-semibold text-white mb-2">Contact</h4>
-          <p className="text-sm">mshapovalov7@gmail.com</p>
-          <p className="text-sm mt-1 text-ocean-400">Local pickup &amp; shipping available</p>
+          <p className="text-sm">ashapovalov@hotmail.com</p>
+          <p className="text-sm mt-1 text-ocean-400">Local pickup available</p>
         </div>
       </div>
       <div className="border-t border-ocean-800 text-center py-4 text-xs text-ocean-400">
-        &copy; {new Date().getFullYear()} Shrimp Depot. All rights reserved.
+        &copy; {new Date().getFullYear()} Shrimp Yard. All rights reserved.
       </div>
     </footer>
   );

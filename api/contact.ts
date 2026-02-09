@@ -55,7 +55,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const apiKey = process.env.SENDGRID_API_KEY;
-  const toEmail = process.env.CONTACT_TO_EMAIL || 'mshapovalov7@gmail.com';
+  const toEmail = process.env.CONTACT_TO_EMAIL || 'ashapovalov@hotmail.com';
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
   if (!apiKey || !fromEmail) {
@@ -72,9 +72,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
       body: JSON.stringify({
         personalizations: [{ to: [{ email: toEmail }] }],
-        from: { email: fromEmail, name: 'Shrimp Depot Contact' },
+        from: { email: fromEmail, name: 'Shrimp Yard Contact' },
         reply_to: { email: cleanEmail, name: cleanName },
-        subject: `Shrimp Depot: Message from ${cleanName}`,
+        subject: `Shrimp Yard: Message from ${cleanName}`,
         content: [
           {
             type: 'text/plain',
