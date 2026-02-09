@@ -105,7 +105,7 @@ export default function Home() {
             },
             {
               title: 'Local Pickup',
-              text: 'Pick up your shrimp in person for the healthiest start. Just reach out to arrange a time.',
+              text: 'Based in Brampton (Clark & Bramalea). Text 416-704-7634 or email ashapovalov@hotmail.com to arrange pickup. Cash accepted!',
               icon: (
                 <path
                   strokeLinecap="round"

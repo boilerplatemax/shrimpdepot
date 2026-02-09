@@ -22,7 +22,8 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-white mb-2">Contact</h4>
           <p className="text-sm">ashapovalov@hotmail.com</p>
-          <p className="text-sm mt-1 text-ocean-400">Local pickup available</p>
+          <p className="text-sm">Text: 416-704-7634</p>
+          <p className="text-sm mt-1 text-ocean-400">Local pickup &mdash; Brampton (Clark &amp; Bramalea)</p>
         </div>
       </div>
       <div className="border-t border-ocean-800 text-center py-4 text-xs text-ocean-400">

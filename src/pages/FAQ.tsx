@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "How do I pick up my order?",
-    a: "After placing your order, we'll reach out to arrange a convenient pickup time and location. Just contact us through the contact page if you have any questions before ordering.",
+    a: "We're based out of Brampton, near Clark & Bramalea. Text us at 416-704-7634 or email ashapovalov@hotmail.com to arrange a pickup time and get the exact location. You can pay online or pay cash in person — no need to pay ahead of time if you prefer cash.",
   },
   {
     q: "Do you offer refunds?",
