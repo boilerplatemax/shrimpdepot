@@ -13,29 +13,32 @@ interface ProductDef {
   description: string;
   priceId: string;
   popular?: boolean;
+  image: string;
 }
 
 export const PRODUCTS: ProductDef[] = [
   {
     id: '10-pack',
-    name: 'Bloody Mary 10-Pack',
+    name: 'Crystal Red 10-Pack',
     price: 40,
     perShrimp: 4.0,
     count: 10,
     description:
-      'Perfect starter colony. 10 hand-selected Bloody Mary shrimp \u2014 vibrant reds, healthy and active.',
+      'Perfect starter colony. 10 hand-selected Crystal Red shrimp — vibrant reds, healthy and active.',
     priceId: import.meta.env.VITE_STRIPE_PRICE_10 || 'price_placeholder_10',
+    image: 'https://aquaticarts.com/cdn/shop/products/Crystal-Red-Shrimp-Small-1.jpg?v=1635964674&width=1080',
   },
   {
     id: '20-pack',
-    name: 'Bloody Mary 20-Pack',
+    name: 'Crystal Red 20-Pack',
     price: 70,
     perShrimp: 3.5,
     count: 20,
     description:
-      'Best value for a thriving colony. 20 Bloody Mary shrimp with a mix of males and females for breeding.',
+      'Best value for a thriving colony. 20 Crystal Red shrimp with a mix of males and females for breeding.',
     priceId: import.meta.env.VITE_STRIPE_PRICE_20 || 'price_placeholder_20',
     popular: true,
+    image: 'https://aquaticarts.com/cdn/shop/products/Crystal-Red-Shrimp-Small-6.jpg?v=1635964675&width=1080',
   },
 ];
 

@@ -13,32 +13,43 @@ export default function Home() {
             <circle cx="700" cy="100" r="200" fill="currentColor" />
           </svg>
         </div>
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 text-center">
-          <p className="text-ocean-300 text-sm font-semibold uppercase tracking-widest mb-4">
-            Live Freshwater Shrimp
-          </p>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-            Bloody Mary Shrimp,
-            <br />
-            <span className="text-ocean-300">Bred with Care.</span>
-          </h1>
-          <p className="mt-6 text-lg sm:text-xl text-ocean-200 max-w-2xl mx-auto">
-            Vibrant, hardy, and ready for your tank. Hand-selected from our
-            home&nbsp;colony — shipped to your door or available for local pickup.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              to="/shop"
-              className="rounded-xl bg-white text-ocean-800 px-8 py-3 text-sm font-bold hover:bg-ocean-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-ocean-800"
-            >
-              Shop Live Shrimp
-            </Link>
-            <Link
-              to="/about"
-              className="rounded-xl border border-ocean-400 px-8 py-3 text-sm font-semibold text-ocean-200 hover:bg-ocean-800 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400"
-            >
-              Our Story
-            </Link>
+        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
+          <div className="grid sm:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-ocean-300 text-sm font-semibold uppercase tracking-widest mb-4">
+                Live Freshwater Shrimp
+              </p>
+              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                Crystal Red Shrimp,
+                <br />
+                <span className="text-ocean-300">Bred with Care.</span>
+              </h1>
+              <p className="mt-6 text-lg sm:text-xl text-ocean-200 max-w-2xl">
+                Vibrant, stunning, and ready for your tank. Hand-selected from our
+                home&nbsp;colony — available for local pickup.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  to="/shop"
+                  className="rounded-xl bg-ocean-500 text-white px-8 py-3 text-sm font-bold hover:bg-ocean-600 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400 focus:ring-offset-2 focus:ring-offset-ocean-900"
+                >
+                  Shop Live Shrimp
+                </Link>
+                <Link
+                  to="/about"
+                  className="rounded-xl border border-ocean-400 px-8 py-3 text-sm font-semibold text-ocean-200 hover:bg-ocean-800 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400"
+                >
+                  Our Story
+                </Link>
+              </div>
+            </div>
+            <div className="hidden sm:block">
+              <img
+                src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10415/crystal-red-shrimp__96053.1709950732.jpg?c=2"
+                alt="Crystal Red Shrimp"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -54,24 +65,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gallery strip */}
+      <section className="bg-gray-50 py-12">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyr_29_vyr_29Crystal-Red--Caridina-cf--cantonensis--1.jpg" alt="Crystal Red Shrimp close-up" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyrp11_29_vyrp11_29Crystal-Red--Caridina-cf--cantonensis--2.jpg" alt="Crystal Red Shrimp on moss" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyrp12_29_vyrp12_29Crystal-Red--Caridina-cf--cantonensis--3.jpg" alt="Crystal Red Shrimp pair" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10414/IMG_9837_2048x2048__84680.1709950732.jpg?c=2" alt="Crystal Red Shrimp colony" className="rounded-xl w-full h-40 object-cover" />
+          </div>
+        </div>
+      </section>
+
       {/* Trust section */}
       <section className="bg-ocean-50 py-16">
         <div className="mx-auto max-w-5xl px-4 grid gap-8 sm:grid-cols-3 text-center">
           {[
             {
-              title: 'Live Arrival Guarantee',
-              text: 'We stand behind every shipment. DOA? We make it right — no hassle.',
+              title: 'Hobbyist-Bred Quality',
+              text: 'Every shrimp is hand-selected from our home colony for vibrant color and strong genetics.',
               icon: (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
                 />
               ),
             },
             {
-              title: 'Care Tips Included',
-              text: 'Every order comes with a quick-start guide so your shrimp thrive from day one.',
+              title: 'Beginner Friendly',
+              text: 'Crystal Red Shrimp are stunning and rewarding to keep. Care tips included with every order.',
               icon: (
                 <path
                   strokeLinecap="round"
@@ -81,13 +104,13 @@ export default function Home() {
               ),
             },
             {
-              title: 'Pickup & Shipping',
-              text: 'Local pickup in the area or insulated priority shipping across the US.',
+              title: 'Local Pickup',
+              text: 'Pick up your shrimp in person for the healthiest start. Just reach out to arrange a time.',
               icon: (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0H21M3.375 14.25h-.375a3 3 0 01-3-3V7.5a.75.75 0 01.75-.75h7.5a.75.75 0 01.75.75v6.75m-3 0h6.75m0 0h.375a3 3 0 013 3v.75m-3-3.75V7.5a.75.75 0 01.75-.75h3.128a.75.75 0 01.624.334l2.872 4.307a.75.75 0 01.126.416v2.443a.75.75 0 01-.75.75H19.5m-6.75 0h6.75"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 />
               ),
             },
