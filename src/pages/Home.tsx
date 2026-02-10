@@ -6,20 +6,20 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden text-white min-h-[480px] flex items-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1568043210943-1f5e217e9e46?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="relative overflow-hidden text-white min-h-[480px] flex items-center" style={{ backgroundImage: 'url(https://splashyfishstore.com/cdn/shop/articles/Caridina_cantonesis_crystal_red_shrimp_aquarium_pets_nature.jpg?v=1739508195)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-ocean-950/70" />
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
           <p className="text-ocean-300 text-sm font-semibold uppercase tracking-widest mb-4">
-            Live Freshwater Shrimp
+            Live Caridina Shrimp
           </p>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-            Crystal Red Shrimp,
+            Crystal Red Caridina,
             <br />
             <span className="text-ocean-300">Bred with Care.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-ocean-200 max-w-2xl">
-            Vibrant, stunning, and ready for your tank. Hand-selected from our
-            home&nbsp;colony — available for local pickup.
+            Premium Caridina cantonensis — vibrant, stunning, and ready for your tank.
+            Hand-selected from our home&nbsp;colony — available for local pickup.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -55,7 +55,7 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10415/crystal-red-shrimp__96053.1709950732.jpg?c=2" alt="Crystal Red Shrimp close-up" className="rounded-xl w-full h-40 object-cover" />
             <img src="https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/500x659/products/406/1459/1Crystal-Red-Shrimp-Caridina-cantonensis-Crystal-Red-1000__24877.1731440283.jpg?c=1" alt="Crystal Red Shrimp on moss" className="rounded-xl w-full h-40 object-cover" />
-            <img src="https://aquaticarts.com/cdn/shop/files/Crystal-Red-Shrimp_1200x.jpg" alt="Crystal Red Shrimp pair" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10416/crystal-red-shrimp-2__17498.1709950732.jpg?c=2" alt="Crystal Red Shrimp pair" className="rounded-xl w-full h-40 object-cover" />
             <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10414/IMG_9837_2048x2048__84680.1709950732.jpg?c=2" alt="Crystal Red Shrimp colony" className="rounded-xl w-full h-40 object-cover" />
           </div>
         </div>
