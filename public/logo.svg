@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" fill="none">
+  <!-- Shrimp body -->
+  <g transform="translate(10, 10)">
+    <!-- Antennae/whiskers -->
+    <path d="M95 45 C85 25, 70 10, 50 5" stroke="#cc2222" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M95 45 C80 20, 55 8, 30 15" stroke="#cc2222" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M95 45 C90 30, 75 18, 55 20" stroke="#cc2222" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- Main shrimp body -->
+    <path d="M60 55 C70 40, 95 35, 110 45 C125 55, 130 70, 120 85 C115 92, 105 98, 90 100 C80 102, 65 98, 55 90 C45 82, 42 70, 48 60 Z" fill="#e63232"/>
+
+    <!-- Shrimp head/rostrum -->
+    <path d="M60 55 C55 50, 45 48, 35 52 C25 56, 20 65, 25 72 C30 78, 40 80, 50 78 C55 76, 58 72, 55 65 Z" fill="#e63232"/>
+
+    <!-- Eye -->
+    <circle cx="42" cy="62" r="4" fill="white"/>
+    <circle cx="43" cy="62" r="2" fill="#1a1a2e"/>
+
+    <!-- Tail segments -->
+    <path d="M110 80 C118 85, 125 90, 135 88 C140 87, 142 82, 138 78 C134 74, 125 76, 118 80 Z" fill="#e63232"/>
+    <path d="M132 85 C138 90, 148 92, 155 87 C158 84, 157 79, 152 77 C146 75, 138 78, 132 82 Z" fill="#e63232"/>
+
+    <!-- Tail fan -->
+    <path d="M150 82 C158 75, 165 68, 160 60 C158 56, 152 58, 150 62 C148 66, 150 75, 150 82 Z" fill="#cc2222"/>
+    <path d="M152 85 C162 88, 170 85, 168 78 C166 72, 158 74, 152 80 Z" fill="#cc2222"/>
+    <path d="M150 82 C160 92, 168 95, 170 90 C172 85, 165 80, 155 82 Z" fill="#cc2222"/>
+
+    <!-- Legs -->
+    <path d="M55 78 C50 88, 45 95, 40 100" stroke="#cc2222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M62 82 C58 92, 55 98, 50 103" stroke="#cc2222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M70 85 C68 95, 65 100, 62 106" stroke="#cc2222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M80 87 C78 95, 77 100, 75 106" stroke="#cc2222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M90 87 C90 95, 90 100, 88 105" stroke="#cc2222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Body stripes/segments -->
+    <path d="M70 50 C75 55, 78 65, 75 75" stroke="#cc2222" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M85 47 C88 55, 90 65, 87 78" stroke="#cc2222" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M100 50 C102 58, 103 68, 100 80" stroke="#cc2222" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Text -->
+  <text x="200" y="85" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="72" fill="#1a2744">Shrimp</text>
+  <text x="200" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="72" fill="#1a2744">Yard</text>
+</svg>
