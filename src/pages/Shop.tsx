@@ -11,7 +11,7 @@ export default function Shop() {
     <section className="mx-auto max-w-4xl px-4 py-16">
       {success && (
         <div className="mb-8 rounded-xl bg-green-50 border border-green-200 p-4 text-green-800 text-sm text-center">
-          Thank you for your order! Text us at 416-704-7634 or email ashapovalov@hotmail.com to arrange your pickup time.
+          Thank you for your order! Text us at 416-704-7634 or use our <a href="/contact" className="underline font-semibold">contact form</a> to arrange your pickup time.
         </div>
       )}
       {canceled && (
@@ -49,13 +49,13 @@ export default function Shop() {
             Text: 416-704-7634
           </a>
           <a
-            href="mailto:ashapovalov@hotmail.com"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-xl bg-ocean-600 text-white px-5 py-2.5 text-sm font-bold hover:bg-ocean-700 transition-colors"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
-            ashapovalov@hotmail.com
+            Contact Form
           </a>
         </div>
       </div>

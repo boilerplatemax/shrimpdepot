@@ -6,50 +6,34 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-ocean-900 via-ocean-800 to-ocean-950 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <svg className="h-full w-full" viewBox="0 0 800 400" preserveAspectRatio="none">
-            <circle cx="200" cy="300" r="300" fill="currentColor" />
-            <circle cx="700" cy="100" r="200" fill="currentColor" />
-          </svg>
-        </div>
+      <section className="relative overflow-hidden text-white min-h-[480px] flex items-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1568043210943-1f5e217e9e46?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-ocean-950/70" />
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
-          <div className="grid sm:grid-cols-2 gap-10 items-center">
-            <div>
-              <p className="text-ocean-300 text-sm font-semibold uppercase tracking-widest mb-4">
-                Live Freshwater Shrimp
-              </p>
-              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-                Crystal Red Shrimp,
-                <br />
-                <span className="text-ocean-300">Bred with Care.</span>
-              </h1>
-              <p className="mt-6 text-lg sm:text-xl text-ocean-200 max-w-2xl">
-                Vibrant, stunning, and ready for your tank. Hand-selected from our
-                home&nbsp;colony — available for local pickup.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  to="/shop"
-                  className="rounded-xl bg-ocean-500 text-white px-8 py-3 text-sm font-bold hover:bg-ocean-600 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400 focus:ring-offset-2 focus:ring-offset-ocean-900"
-                >
-                  Shop Live Shrimp
-                </Link>
-                <Link
-                  to="/about"
-                  className="rounded-xl border border-ocean-400 px-8 py-3 text-sm font-semibold text-ocean-200 hover:bg-ocean-800 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400"
-                >
-                  Our Story
-                </Link>
-              </div>
-            </div>
-            <div className="hidden sm:block">
-              <img
-                src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10415/crystal-red-shrimp__96053.1709950732.jpg?c=2"
-                alt="Crystal Red Shrimp"
-                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover"
-              />
-            </div>
+          <p className="text-ocean-300 text-sm font-semibold uppercase tracking-widest mb-4">
+            Live Freshwater Shrimp
+          </p>
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+            Crystal Red Shrimp,
+            <br />
+            <span className="text-ocean-300">Bred with Care.</span>
+          </h1>
+          <p className="mt-6 text-lg sm:text-xl text-ocean-200 max-w-2xl">
+            Vibrant, stunning, and ready for your tank. Hand-selected from our
+            home&nbsp;colony — available for local pickup.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              to="/shop"
+              className="rounded-xl bg-ocean-500 text-white px-8 py-3 text-sm font-bold hover:bg-ocean-600 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400 focus:ring-offset-2 focus:ring-offset-ocean-900"
+            >
+              Shop Live Shrimp
+            </Link>
+            <Link
+              to="/about"
+              className="rounded-xl border border-ocean-400 px-8 py-3 text-sm font-semibold text-ocean-200 hover:bg-ocean-800 transition-colors focus:outline-none focus:ring-2 focus:ring-ocean-400"
+            >
+              Our Story
+            </Link>
           </div>
         </div>
       </section>
@@ -69,9 +53,9 @@ export default function Home() {
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyr_29_vyr_29Crystal-Red--Caridina-cf--cantonensis--1.jpg" alt="Crystal Red Shrimp close-up" className="rounded-xl w-full h-40 object-cover" />
-            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyrp11_29_vyrp11_29Crystal-Red--Caridina-cf--cantonensis--2.jpg" alt="Crystal Red Shrimp on moss" className="rounded-xl w-full h-40 object-cover" />
-            <img src="https://www.shrimp.cz/fotky70036/fotos/_vyrp12_29_vyrp12_29Crystal-Red--Caridina-cf--cantonensis--3.jpg" alt="Crystal Red Shrimp pair" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10415/crystal-red-shrimp__96053.1709950732.jpg?c=2" alt="Crystal Red Shrimp close-up" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/500x659/products/406/1459/1Crystal-Red-Shrimp-Caridina-cantonensis-Crystal-Red-1000__24877.1731440283.jpg?c=1" alt="Crystal Red Shrimp on moss" className="rounded-xl w-full h-40 object-cover" />
+            <img src="https://aquaticarts.com/cdn/shop/files/Crystal-Red-Shrimp_1200x.jpg" alt="Crystal Red Shrimp pair" className="rounded-xl w-full h-40 object-cover" />
             <img src="https://cdn11.bigcommerce.com/s-z6dz2p/images/stencil/1280x1280/products/2181/10414/IMG_9837_2048x2048__84680.1709950732.jpg?c=2" alt="Crystal Red Shrimp colony" className="rounded-xl w-full h-40 object-cover" />
           </div>
         </div>
@@ -105,7 +89,7 @@ export default function Home() {
             },
             {
               title: 'Local Pickup',
-              text: 'Based in Brampton (Clark & Bramalea). Text 416-704-7634 or email ashapovalov@hotmail.com to arrange pickup. Cash accepted!',
+              text: 'Based in Brampton (Clark & Bramalea). Text 416-704-7634 or use our contact form to arrange pickup. Cash accepted!',
               icon: (
                 <path
                   strokeLinecap="round"
