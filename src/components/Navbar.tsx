@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center">
-          <img src="/logo.svg" alt="Shrimp Yard" className="h-12" />
+          <img src="/logo.svg" alt="Shrimp Yard" className="h-10 w-auto object-contain" />
         </Link>
 
         {/* Desktop links */}
