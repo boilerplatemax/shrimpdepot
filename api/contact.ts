@@ -55,7 +55,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const apiKey = process.env.SENDGRID_API_KEY;
-  const toEmail = process.env.CONTACT_TO_EMAIL || 'ashapovalov@hotmail.com';
+  const toEmail = process.env.CONTACT_TO_EMAIL || 'mshapovalov7@gmail.com';
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
   if (!apiKey || !fromEmail) {
@@ -87,7 +87,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (!sgRes.ok) {
       const body = await sgRes.text();
       console.error('SendGrid error:', sgRes.status, body);
-      return res.status(502).json({ error: 'Failed to send email.' });
+      let detail = 'Failed to send email.';
+      if (sgRes.status === 403) {
+        detail = 'Sender email not verified in SendGrid. Verify info@uniontab.com as a Single Sender or authenticate the domain.';
+      } else if (sgRes.status === 401) {
+        detail = 'SendGrid API key is invalid or lacks Mail Send permission.';
+      }
+      return res.status(502).json({ error: detail });
     }
 
     return res.status(200).json({ ok: true });
