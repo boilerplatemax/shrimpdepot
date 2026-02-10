@@ -1,4 +1,4 @@
-import { redirectToCheckout, type Product } from '../utils/stripe';
+import { type Product } from '../utils/stripe';
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
@@ -35,12 +35,14 @@ export default function ProductCard({ product }: { product: Product }) {
 
         <p className="text-gray-600 text-sm flex-1">{product.description}</p>
 
-        <button
-          onClick={() => redirectToCheckout(product.priceId)}
-          className="w-full cursor-pointer rounded-xl bg-ocean-600 px-4 py-3 text-sm font-semibold text-white hover:bg-ocean-700 focus:outline-none focus:ring-2 focus:ring-ocean-400 focus:ring-offset-2 transition-colors"
+        <a
+          href={product.paymentLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full cursor-pointer rounded-xl bg-ocean-600 px-4 py-3 text-sm font-semibold text-white text-center hover:bg-ocean-700 focus:outline-none focus:ring-2 focus:ring-ocean-400 focus:ring-offset-2 transition-colors inline-block"
         >
           Buy {product.count} Shrimp &mdash; ${product.price}
-        </button>
+        </a>
       </div>
     </div>
   );
