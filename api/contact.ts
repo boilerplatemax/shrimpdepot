@@ -55,7 +55,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const apiKey = process.env.SENDGRID_API_KEY;
-  const toEmail = process.env.CONTACT_TO_EMAIL || 'mshapovalov7@gmail.com';
+  const toEmail = process.env.CONTACT_TO_EMAIL || 'ashpovalov@hotmail.com';
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
   if (!apiKey || !fromEmail) {
